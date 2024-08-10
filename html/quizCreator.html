@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORDSER</title>
+    <link rel="icon" href="../img/face-meh-blank-regular.svg">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="main">
+        
+        <ul class="nav">
+            <li><i class="fa-regular fa-face-meh-blank logo"></i></li>
+            <li><i class="fa-solid fa-bars-staggered settings"></i></li>
+
+            <ul class="navList">
+                <!-- <a href=""><li>Contacto</li></a> -->
+                <a href="../index.html"><li>WORDSÉ</li></a>
+                <a href="misQuizis.html"><li>Mis Quizis</li></a>
+            </ul>
+
+        </ul>
+        
+       
+        <h1 class="logoTxt">WORDSÉ</h1>
+
+        <sub class="subTxt">QUIZIZZ</sub>
+
+        <div class="creatorContener">
+            <h2 class="txt">CREA TU QUIZ!</h2>
+
+            <form class="quiz-a">
+                <label for="quiz-title">EL TITULO: <input class="inputDesign" id="quiz-title" type="text"></label>
+
+                <br><br>
+                <label for="quiz-auhor">EL AUTOR: <input class="inputDesign" id="quiz-author" type="text"></label>
+
+                <button class="btnDesign btn" type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+
+            </form>
+
+            <form class="quiz-b">
+                <div class="inf">
+                    <b>EL TITULO: " <span class="title_inf">X_X</span> "</b>
+                    <br>
+                    <b>EL AUTOR: <span class="author_inf">X_X</span></b>
+                </div>
+                <hr>
+
+                <h3 class="questionTxt">LA PREGUNTA</h3>
+
+                <form class="optionsForm">
+
+                    <label for="question-value">La pregunta: <input class="inputDesign" type="text" id="question-value"></label>
+
+                    <p>Elige la forma de la respuesta: </p>
+
+                    <ul class="options">
+                        <li data-type="options">OPTIONS</li>
+                        <li data-type="true_false">VERDADERO O FALSO</li>
+                        <li data-type="write">ESCRIBE</li>
+
+                    </ul>
+
+                    <!-- WYBÓR: OPCJE -->
+                    <div class="optionsDiv">
+                    
+                        <button class="btnDesign2 btnAddOptions">AGREGAR OPCIÓN</button>
+                        
+                <div class="btns">
+                    
+                    <button class="btnDesign goPrev"><i class="fa-solid fa-arrow-left"></i></button>
+
+                    <button class="btnDesign goNext" type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                    
+                </div>
+                        <br><br>
+                        <div class="option">
+
+                            <input class="checkboxDesign inp" type="checkbox">
+                            <input class="inputDesign valueTxt" type="text">
+                            <button class="delateBtn_b btnDesign3">X</button>
+                            <br>
+                        </div>
+
+                        <div class="option">
+                            
+                            <input class="checkboxDesign inp" type="checkbox">
+                            <input class="inputDesign valueTxt" type="text">
+                            <button class="delateBtn_b btnDesign3">X</button>
+                            <br>
+                        </div>
+
+
+                    </form>
+
+                 </div>
+
+
+                 <!-- tu bylo -->
+
+            </form>
+
+            <form class="quiz-c">
+                <div class="choose_btns">
+                    <button class="btnDesign2 btn_crear-otro">Crea la otra pregunta</button>
+                    <br>
+                    <button class="btnDesign2 btn_terminar">Terminar</button>
+                </div>
+                <hr>
+                <h4>El numero de las preguntas: <span class="number_of_questions"></span></h4>
+            </form>
+
+
+            <form class="quiz-d">
+                <h1 class="questionTxt">FIN</h1>
+                <form>
+                    <p class="title_place_d">El titulo: </p>
+                    <p class="author_place_d">El autor: </p>
+                    <p class="cantidad_place_d">La cantidad de las preguntas: </p>
+                    <hr>
+                    <ul class="questionsList">
+                        <p>LAS PREGUNTAS:</p>
+                        
+                        
+                    </ul>
+                    <button class="btnDesign  goTo_b"><i class="fa-solid fa-arrow-left"></i></button>
+
+                    <button class="btnDesign2 btn_convalidar" type="submit">CONVALIDAR</button>
+                </form>
+            </form>
+
+            <form class="quiz-e">
+                <h1 class="questionTxt">ENHORABUENA!</h1>
+                <br><br>
+                <i class="fa-solid fa-heart icon_heart"></i>
+                <br><br><br>
+                <p>Puedes verlo en la sección "Mis quizis"</p>
+                <br>
+                <a href="quizCreator.html"><button class="btnDesign2">CREA EL SIGUIENTE</button></a>
+
+
+            </form>
+        </div>
+
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="../js/crearQuiz.js"></script>
+    
+</body>
+</html>

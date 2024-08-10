@@ -1,0 +1,170 @@
+
+.main{
+
+    .txt2{
+        background-color: var(--color3);
+        color: var(--color4);
+        border: black dashed 2px;
+    }
+    .txt3{
+        margin: 30px 0 0 0;
+        padding: 4px;
+        color: var(--color3);
+        border-top: 5px solid var(--color3);
+        /* border-bottom: 1px solid var(--color1); */
+        background-color: var(--color2);
+    }
+    .txt4{
+        color: var(--color3);
+        font-size: 13px;
+        text-align: left;
+        margin-left: 5px;
+    }
+
+
+    .mine_quizContener{
+        padding: 10px;
+        margin: 40px 10px;
+        min-height: 50svh;
+        border: 2px var(--color4) solid;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .mine_quiz{
+            width: 100px;
+            height: 150px;
+            background-color: var(--color4);
+            margin: 20px;
+            border: 1px solid black;
+            font-size: 15px;
+            border-radius: 5px;
+            padding: 2px;
+            transition: .2s;
+            word-wrap: break-word; /* Lub */
+            overflow-y:auto;
+
+            &:hover{
+                transform: translate(0,10px);
+                cursor: pointer;
+            }
+        }
+    }
+    .my_quiz_a{
+        display: none;
+        padding: 20px;
+        border: 12px solid var(--color2);
+        margin: 10px;
+        min-height: 50svh;
+        background-color: var(--color4);
+
+        .btn_startQuiz{
+            border:var(--color1) dashed 1.6px;
+            &:hover{
+                color: var(--color1);
+                cursor: pointer;
+            }
+        }
+        .my_quiz_b{
+            display: none;
+            padding: 20px;
+            border: 12px solid var(--color2);
+            margin: 10px;
+            min-height: 50svh;
+            background-color: var(--color4);
+
+            .question_title{
+                background-color: var(--opacityColor2);
+                 color: var(--color2); /*lub color3 */
+            }
+            .convalidar_answer{
+                display: block;
+                margin: 20px 10px 10px 90%;
+             }
+            .answers_contener{
+                display: flex;
+                flex-direction:column;
+                flex-wrap: wrap;
+
+                .answer{
+                    display: inline-flex;
+   
+                  
+                    vertical-align: middle;
+                    margin: 30px;
+                    position: relative;
+                    .inputDesign2{
+                        min-width: 175px;
+                        height: 21px;
+                        background-color: var(--opacityColor2);
+                        color: var(--color1);
+                        border-bottom: 5px solid var(--color3);
+                        margin: 5px 0 0 5px;
+                       
+                    }
+                    .checkboxDesign{
+                       
+                    }
+                    .bird{
+                        position: absolute;
+                        font-size: 22px;
+                        top: 4px;
+                        left: 102%;
+                        color: var(--color4);
+                        background-color: var(--opacityColor2);
+                        border-radius: 50%;
+                        padding: 5px;
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                }
+            }
+            
+            
+            
+        }
+        .section_result{
+            display: none;
+            padding: 20px;
+            border: 12px solid var(--color3);
+            margin: 10px;
+            min-height: 30svh;
+            background-color: var(--color2);
+            color:var(--color4) ;
+
+            .result_h2{
+
+            }
+            .result_percent{
+                padding: 20px;
+
+            }
+        }
+
+        
+    }
+  
+}
+
+@media (max-width:400px){
+    .my_quiz_a{
+        padding: 10px !important;
+        border-width: 6px !important;
+        margin: 5px !important;
+
+        .my_quiz_b{
+            padding: 5px !important;
+            border-width: 6px !important;
+            margin: 3px !important;
+            
+            .question_title{
+                width: 65%;
+            }
+            .convalidar_answer{
+                margin: 20px 10px 10px 78% !important;
+            }
+        }
+
+    }
+}
